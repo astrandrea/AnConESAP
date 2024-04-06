@@ -31,6 +31,7 @@ De esta forma, con esta política la Agencia Nacional de Contratación Pública 
 Sin embargo, aun cuando la integración de lineamientos en materia de contratación pública sea un propósito de la administración pública conducente al buen manejo del prespuesto y a la planeación de las finanzas públicas, esto resulta en un reto su implementación y aprovechamiento para la toma de decisones en el ámbito de la contratación pública. Los procedimientos que rigen la contratación deben verse reflejados en la planeación de la contratación y se deben implementar en contextos de alta incertidumbre que las organizaciones constantemente reflejan.
 
 En este sentido, para evidenciar lo anteriormente expuesto, se trata de analizar el efecto que tiene el tiempo de ejecución de los procesos de contratación sobre el valor de la contratación de la Escuela Superior Pública, vista en este análisis como un individuo sobre el el cual es posible su estudio a la luz de los objetivos planteados en este proyecto y según la información disponible en el data set datos abiertos publicados por la Agencia Nacional de Contratación Pública - Colombia Compra Efienciete sobre el data set [SECOP II - Contratos Electrónicos] (https://www.datos.gov.co/Gastos-Gubernamentales/)
+<<<<<<< HEAD
 
 
 ### _Libreriras_
@@ -466,3 +467,5 @@ modelo_efectos_fijos = smf.ols('valor_del_contrato ~ dias_hasta_inicio_contrato 
 
 # Mostrar los resultados del modelo
 print(modelo_efectos_fijos.summary())
+=======
+>>>>>>> 57acbfe673c74c33a1731293db2f9c09833e7639
