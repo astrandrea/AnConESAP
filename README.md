@@ -14,11 +14,11 @@ En este sentido, se exploran y analizan los resultados del modelo de efectos fij
 
  ## Objetivos específicos
 
- *$1.$* Explorar métodos de limpieza, depuración y automatización de la bases datos de contratos de la Escuela Superior de Administración Pública a partir del uso y aprovechamiento de los datos e información de del data set [SECOP II - Contratos Electrónicos](https://www.datos.gov.co/Gastos-Gubernamentales/SECOP-II-Contratos-Electr-nicos/jbjy-vk9h/about_data)
+ **1** Explorar métodos de limpieza, depuración y automatización de la bases datos de contratos de la Escuela Superior de Administración Pública a partir del uso y aprovechamiento de los datos e información de del data set [SECOP II - Contratos Electrónicos](https://www.datos.gov.co/Gastos-Gubernamentales/SECOP-II-Contratos-Electr-nicos/jbjy-vk9h/about_data)
 
-*$2.$* Aplicar técnicas para medir el efecto del tiempo de ejecución de la contratación pública sobre el valor de los contratos celebrados por la Escuela Superior de Administración Pública durante el período 2020-2024
+**2.** Aplicar técnicas para medir el efecto del tiempo de ejecución de la contratación pública sobre el valor de los contratos celebrados por la Escuela Superior de Administración Pública durante el período 2020-2024
 
-*$3.$* Analizar el fenómeno de la contratación pública con Colombia con el propósito de brindar recomendaciones sobre el buen manejo de los recursos públicos a los sujetos responsables de su ejecución
+**3.** Analizar el fenómeno de la contratación pública con Colombia con el propósito de brindar recomendaciones sobre el buen manejo de los recursos públicos a los sujetos responsables de su ejecución
 
 ## Antecedentes
 
@@ -40,25 +40,25 @@ Se propone analizar el fenómeno de la contratación a partir de diferentes ento
 
 Se realiza un Pipeline y se utilizan los métodos de Clusterización: KMean y DBSCAN para clasificacar los contratos conforme las variables:
 
-vc_cat: Contratos por encima de la media: 26,920,725
+**vc_cat:** Contratos por encima de la media: 26,920,725
 0    8427
 1    4712
 
 
-columnas_categoricas = ['orden',
+//columnas_categoricas = ['orden',
        'sector', 'tipo_de_contrato','modalidad_de_contratacion', 'condiciones_de_entrega', 
        'es_grupo', 'es_pyme', 'origen_de_los_recursos', 'tipo_de_identificaci_n_representante_legal',
-       'g_nero_representante_legal','nombre_sede','producto']
+       'g_nero_representante_legal','nombre_sede','producto']//
 
 
-columnas_numericas = ['nit_entidad', 'codigo_de_categoria_principal',
+//columnas_numericas = ['nit_entidad', 'codigo_de_categoria_principal',
        'valor_de_pago_adelantado', 'valor_facturado', 'valor_del_contrato',
        'valor_pendiente_de_pago', 'valor_pagado', 'valor_amortizado',
        'valor_pendiente_de', 'valor_pendiente_de_ejecucion', 'saldo_cdp',
        'saldo_vigencia', 'dias_adicionados',
        'codigo_proveedor', 'ano_fecha_de_firma',
        'tiempo_entre_firma_fin_dia', 'tiempo_entre_firma_fin_meses',
-       'tiempo_entre_firma_fin']
+       'tiempo_entre_firma_fin']//
 
 
 
