@@ -34,15 +34,40 @@ En este sentido, para evidenciar lo anteriormente expuesto, se trata de analizar
 
 ## Metodologia
 
-Se realiza la limpieza de la base de datos, a partir de la cual se analiza el valor de los contratos
+Se propone analizar el fenómeno de la contratación a partir de diferentes entornos y técnicas empleadas en la clase de programación de la Maestría en Inteligencia de Negocios. Se explora el lenguaje de Python y modelos de Maching Learning para procesar, clasificar y predecir datos conforme el tipo de datos, el modelo aplicado y los resultados obtenidos
+
+## Modelo empleado
+
+Se realiza un Pipeline y se utilizan los métodos de Clusterización: KMean y DBSCAN para clasificacar los contratos conforme las variables:
+
+vc_cat: Contratos por encima de la media: 26,920,725
+0    8427
+1    4712
 
 
+columnas_categoricas = ['orden',
+       'sector', 'tipo_de_contrato','modalidad_de_contratacion', 'condiciones_de_entrega', 
+       'es_grupo', 'es_pyme', 'origen_de_los_recursos', 'tipo_de_identificaci_n_representante_legal',
+       'g_nero_representante_legal','nombre_sede','producto']
 
-## Modelo
+
+columnas_numericas = ['nit_entidad', 'codigo_de_categoria_principal',
+       'valor_de_pago_adelantado', 'valor_facturado', 'valor_del_contrato',
+       'valor_pendiente_de_pago', 'valor_pagado', 'valor_amortizado',
+       'valor_pendiente_de', 'valor_pendiente_de_ejecucion', 'saldo_cdp',
+       'saldo_vigencia', 'dias_adicionados',
+       'codigo_proveedor', 'ano_fecha_de_firma',
+       'tiempo_entre_firma_fin_dia', 'tiempo_entre_firma_fin_meses',
+       'tiempo_entre_firma_fin']
 
 
 
 ## Clusters
 
+Se utilizan las funciones KMedias y DBSCAN para realizar metodo de clusterización de donde se obtiene la clasificación de los contratos, según
+el pipeline realizado mediante Radom Forest a partir de 1 componente y 11 clusters bajo DBSCAN.
 
 ## Conclusiones
+
+Se observa mayor cantidad decontratos se agrupa en la componente 1 y en el en el cluster -1. Es dedecir que en la primera compontente sirve 
+para estimar o predecir el comportamiento de los contratos en la ESAP. Existiendo muy pocos contratos por fuera de este comportamiento.
